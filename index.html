@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Adaptive LLM Routing Under Budget Constraints">
+  <meta name="keywords" content="LLM, Routing, Bandits, Findings EMNLP 2025">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evaluating Compound AI Systems through Behaviors, Not Benchmarks</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <!-- If you copied this site, remember to remove analytics scripts from the original. -->
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          <span class="icon"><img src="./static/images/favicon.svg" alt="logo" style="height:1.2em;"></span>
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://ast-fri.github.io/EnterpriseBench/">
+            EnterpriseBench
+          </a>
+          <a class="navbar-item" href="https://ast-fri.github.io/needles-in-images/">
+            Needles-in-Images
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Adaptive LLM Routing Under Budget Constraints</h1>
+                    <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://sites.google.com/view/pranoy-panda/">Pranoy Panda</a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a href="https://in.linkedin.com/in/raghav-magazine-993537201">Raghav Magazine</a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a href="https://chaitanya.one/">Chaitanya Devaguptapu</a>
+            </span>
+            <span class="author-block">
+              <a href="https://jp.linkedin.com/in/sho-takemori-815298229">Sho Takemori</a>
+            </span>
+            <span class="author-block">
+              <a href="https://vshlroot.github.io/">Vishal Sharma</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Fujitsu Research</span>
+          </div>
+
+          <div class="column has-text-centered" style="margin-top: 1rem;">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://aclanthology.org/2025.findings-emnlp.1301.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg>
+                  </span>
+                  <span>Paper (PDF)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://aclanthology.org/2025.findings-emnlp.1301"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <img src="https://aclanthology.org/images/acl-logo.svg" alt="ACL Anthology" style="height:1.0em">
+                  </span>
+                  <span>Anthology Page</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large Language Models (LLMs) have revolutionized natural language processing, but their varying 
+            capabilities and costs pose challenges in practical applications. LLM routing addresses this by 
+            dynamically selecting the most suitable LLM for each query/task. Previous approaches treat this 
+            as a supervised learning problem, assuming complete knowledge of optimal query-LLM pairings. 
+            However, real-world scenarios lack such comprehensive mappings and face evolving user queries. 
+            We thus propose to study LLM routing as a contextual bandit problem, enabling adaptive decision-making 
+            using bandit feedback without requiring exhaustive inference across all LLMs for all queries (in contrast
+            to supervised routing). To address this problem, we develop a shared embedding space for queries and 
+            LLMs, where query and LLM embeddings are aligned to reflect their affinity. This space is initially 
+            learned from offline human preference data and refined through online bandit feedback. We instantiate
+            this idea through Preference-prior Informed Linucb fOr adaptive rouTing (PILOT), a novel extension 
+            of LinUCB. To handle diverse user budgets for model routing, we introduce an online cost policy modeled
+            as a multi-choice knapsack problem, ensuring resource-efficient routing.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Demo video (single mp4). -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-3">Project Demo</h2>
+        <p class="content">Below is a single demo video demonstrating the project's motivation and approach.</p>
+        <!-- IMPORTANT: Put your demo video at ./static/videos/demo.mp4 or update the path below. -->
+        <video id="demo" controls playsinline width="100%" poster="./static/images/demo_poster.jpg">
+          <source src="./static/videos/demo.mp4" type="video/mp4">
+          <!-- Fallback text for browsers that do not support the video element. -->
+          Your browser does not support the video tag. Please download the demo <a href="./static/videos/demo.mp4">here</a>.
+        </video>
+
+      </div>
+    </div>
+
+    <!-- Removed other demonstration videos/carousel as requested. -->
+
+    <div class="columns is-centered has-text-centered" style="margin-top: 2rem;">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Key Contributions</h2>
+        <div class="key-contribs-container">
+          <ul class="key-contribs" role="list" aria-label="Key contributions">
+            <li>
+            <span class="icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span>
+            <span class="text">Formulation LLM routing as a budget constrained contextual bandit problem</span>
+            </li>
+            <li>
+            <span class="icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span>
+            <span class="text">A Preference-Prior Informed LinUCB algorithm (PILOT) that combines offline human preference data with online bandit feedback to route queries. We also show our preference prior helps achieve a lower regret bound than standard algorithm.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Links</h2>
+        <div class="content has-text-justified">
+          <p>
+            The paper is published in the Findings of EMNLP 2025. For full details, please see the
+            PDF linked above. If you have code, dataset, or a project repo, add links here (for
+            example, a GitHub repository and a dataset release).
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{bhagat2025evaluating,
+  title     = {Evaluating Compound AI Systems through Behaviors, Not Benchmarks},
+  author    = {Panda, Pranoy and Magazine, Raghav and Devaguptapu, Chaitanya and Takemori, Sho and Sharma, Vishal},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2025},
+  pages     = {23934-23949},
+  year      = {2025},
+  publisher = {Association for Computational Linguistics}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://aclanthology.org/2025.findings-emnlp.1314.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source</a> code of this website, we just ask that you link back to this page in the footer. Please remember to remove the analytics code included in the header of the website which you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
